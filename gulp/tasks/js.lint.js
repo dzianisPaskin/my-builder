@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict';
 
 module.exports = function() {
@@ -5,5 +6,5 @@ module.exports = function() {
     return $.gulp.src($.path.app)
       .pipe($.gp.eslint())
       .pipe($.gp.eslint.format());
-  })
+  });
 };

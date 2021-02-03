@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict';
 
 global.$ = {
@@ -26,8 +27,10 @@ $.gulp.task('default', $.gulp.series(
     'pug',
     'js:foundation',
     'js:process',
+    'copy:font',
     'copy:image',
     'css:foundation',
+    'sprite:png',
     'sprite:svg'
   ),
   $.gulp.parallel(
@@ -35,3 +38,5 @@ $.gulp.task('default', $.gulp.series(
     'serve'
   )
 ));
+
+

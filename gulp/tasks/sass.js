@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 'use strict';
 
 module.exports = function() {
@@ -9,5 +10,5 @@ module.exports = function() {
       .pipe($.gp.sourcemaps.write())
       .pipe($.gulp.dest($.config.root + '/assets/css'))
       .pipe($.browserSync.stream());
-  })
+  });
 };
